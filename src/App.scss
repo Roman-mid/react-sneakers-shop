@@ -143,12 +143,16 @@ body {
   }
 }
 
-@media (max-width: 500px) {
-  .main {
-    padding: 0 15px;
-    width: auto;
+@media (max-width: 570px) {
+  body {
+    padding-top: 20px;
   }
+  .main {
+    width: 92%;
+  }
+}
 
+@media (max-width: 500px) {
   .wrap-cards {
     flex-direction: column;
   }
