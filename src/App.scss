@@ -32,14 +32,12 @@ a {
 
 body {
   padding-top: 85px;
-  // text-align: center;
   background: #E7F6FF;
 }
 .main {
   max-width: 1080px;
   margin: 0 auto;
   background: #fff;
-  //margin-top: 85px;
   border-radius: 20px;
 }
 
@@ -49,7 +47,6 @@ body {
 
 .content {
   padding: 20px 40px 60px;
-  //padding-bottom: 40px;
 }
   
 .title {
@@ -65,7 +62,6 @@ body {
     height: 45px;
     outline: none;
     border: 1px solid #F3F3F3;
-   // border: 1px solid #d6d5d5;
 
     border-radius: 10px;
     padding: 0 20px ;
@@ -97,7 +93,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 35px;
-  //width: 950px;
   padding: 0 25px;
 }
 
@@ -152,7 +147,14 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 525px) {
   .wrap-cards {
     flex-direction: column;
   }
