@@ -1,0 +1,75 @@
+
+
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  //height: 100vh;
+  flex: 1;
+  gap: 50px;
+  padding-top: 80px;
+  padding-bottom: 170px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.backBtn {
+  border-radius: 18px;
+  background: #9dd458;
+  width: 350px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.5s;
+  position: relative;
+
+  img {
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 13px;
+    left: 80px;
+    transition: 1s;
+  }
+
+  &:hover {
+    background: lighten(#9dd458, 5%);
+
+    img {
+      left: 40px;
+      //animation: backShop 1s ease infinite;
+    }
+  }
+
+  &:active {
+    background: darken(#9dd458, 5%);
+  }
+}
+@keyframes backShop {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+   left: 40px;
+
+  }
+
+}
+
+@media (max-width: 350px) {
+  .backBtn {
+    width: 280px;
+
+    img {
+      left: 50px;
+    }
+  }
+}

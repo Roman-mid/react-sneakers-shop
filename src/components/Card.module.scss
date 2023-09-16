@@ -1,0 +1,93 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 210px;
+  height: 260px;
+  padding: 20px 30px;
+  border: 1px solid #f3f3f3;
+  border-radius: 40px;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
+    //border: 1px solid #d6d5d5;
+
+    button {
+      opacity: 1;
+    }
+
+  }
+
+  button {
+    width: 32px;
+    height: 32px;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .likeEmpty {
+   //@include flex;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .menSneakers {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+.info {
+  @include flex;
+  margin-top: 25px;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  span {
+    color: #bdbdbd;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  b {
+    font-size: 14px;
+  }
+}
+
+// Medium 992px - 1199px
+@media (max-width: 1199px) {
+  .card {
+    width: 200px;
+  }
+}
+
+// Medium 768px - 991px
+@media (max-width: 991px) {
+  .card {
+    width: 195px;
+  }
+}
+
+// Small 576px - 767px
+@media (max-width: 767px) {
+  .card {
+    width: 210px;
+  }
+}
+
+

@@ -1,0 +1,63 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  @include flex;
+  padding: 45px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.sticy {
+  position: sticky;
+  background: red;
+  top: 0;
+}
+
+.logo {
+  @include flex;
+  gap: 15px;
+
+  h5 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  span {
+    font-size: 14px;
+    opacity: 0.6;
+    font-weight: 400;
+  }
+}
+
+.headerRight {
+  @include flex;
+  width: 180px;
+
+  div {
+    @include flex;
+    gap: 10px;
+
+    span {
+      font-size: 14px;
+      color: #5c5c5c;
+      font-weight: 700;
+    }
+  }
+  
+
+  .like,
+  .user,
+  .cart {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'inter', system-ui;
+
+}
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+body {
+  padding-top: 85px;
+  // text-align: center;
+  background: #E7F6FF;
+}
+.main {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #fff;
+  //margin-top: 85px;
+  border-radius: 20px;
+}
+
+
+
+// ---------- content ------------
+
+.content {
+  padding: 20px 40px 60px;
+  //padding-bottom: 40px;
+}
+  
+.title {
+  @include flex;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  input {
+    width: 250px;
+    height: 45px;
+    outline: none;
+    border: 1px solid #F3F3F3;
+   // border: 1px solid #d6d5d5;
+
+    border-radius: 10px;
+    padding: 0 20px ;
+    color: #BDBDBD;
+    transition: 0.3s;
+
+    &::placeholder {
+      color: #BDBDBD;
+    }
+
+    &:hover {
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.05);
+    }
+
+    &:focus {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+  }
+
+}
+
+// ------------ sneakers --------------------
+
+.wrap-cards {
+  margin: 0 auto;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  //width: 950px;
+  padding: 0 25px;
+}
+
+.error {
+  text-align: center;
+  font-size: 40px;
+}
+
+
+// Large 992px - 1199px
+@media (max-width: 1199px) {
+  .main {
+    width: 960px;
+  }
+  .wrap-cards {
+    gap: 20px;
+    padding: 0;
+  }
+}
+
+// Medium 768px - 991px
+@media (max-width: 991px) {
+  .main {
+    width: 720px;
+  }
+}
+
+//Small 576px - 767px
+@media (max-width: 767px) {
+  .main {
+    width: 540px;
+  }
+
+  .title {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .wrap-cards {
+    gap: 0;
+    row-gap: 30px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    padding: 0 15px;
+    width: auto;
+  }
+
+  .wrap-cards {
+    flex-direction: column;
+  }
+}

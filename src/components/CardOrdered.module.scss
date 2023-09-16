@@ -1,0 +1,30 @@
+
+.orderWrap {
+
+  border-top: 1px solid #c0bebe;
+  border-bottom: 1px solid #c0bebe;
+  border-radius: 40px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+    h2 {
+        margin-top: 10px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+  .orderWrap {
+
+    h2 {
+      text-align: center;
+      padding: 0;
+      font-size: 20px;
+    }
+  }
+  .orderWrap {
+    //padding: 20px 20px ;
+  }
+}
