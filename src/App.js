@@ -19,7 +19,7 @@ import './App.scss';
 
 function App() {
 
-  const [sneakers, setSneakers] = React.useState([]);
+  const [sneakers, setSneakers] = React.useState(data);
   const [addedSneakers, setAddedSneakers] = React.useState([]);
   const [favorite, setFavorite] = React.useState([]);
   const [openCart, setOpenCart] = React.useState(false);
@@ -38,8 +38,8 @@ function App() {
     async function getData() {
       setLoading(true)
       try {
-        const resp = await axios.get('https://64f21e6d0e1e60602d24c3bb.mockapi.io/items'); 
-        setSneakers(resp.data);
+        // const resp = await axios.get('https://64f21e6d0e1e60602d24c3bb.mockapi.io/items'); 
+        // setSneakers(resp.data);
       } catch (err) {
         setError(err.message)
       } 

@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 
 const data = [
-    {id: nanoid(5), name: 'Nike Blazer Mid Suede', url: 'img/sneakers10.png', price: 159, inCart: false, favorite: false},
+    {id: nanoid(5), name: 'Nike Lebron Witness EP', url: 'img/sneakers1.png', price: 159, inCart: false, favorite: false},
     {id: nanoid(5), name: 'Nike Air Max 270', url: 'img/sneakers2.png', price: 189, inCart: false, favorite: false},
     {id: nanoid(5), name: 'Nike Blazer Mid Suede', url: 'img/sneakers3.png', price: 119, inCart: false, favorite: false},
     {id: nanoid(5), name: 'Puma X Aka Boku Future Rider', url: 'img/sneakers4.png', price: 109, inCart: false, favorite: false},
@@ -11,7 +11,7 @@ const data = [
     {id: nanoid(5), name: 'Nike LeBron XVIII', url: 'img/sneakers8.png', price: 179, inCart: false, favorite: false},
     {id: nanoid(5), name: 'Nike Lebron XVIII Low', url: 'img/sneakers9.png', price: 159, inCart: false, favorite: false},
     {id: nanoid(5), name: 'Nike Blazer Mid Suede', url: 'img/sneakers10.png', price: 159, inCart: false, favorite: false},
-    {id: nanoid(5), name: 'Puma X Aka Boku Future Rider', url: 'img/sneakers4.png', price: 109, inCart: false, favorite: false},
+    {id: nanoid(5), name: 'Alabama Week Zero V8', url: 'img/sneakers11.png', price: 109, inCart: false, favorite: false},
     {id: nanoid(5), name: 'Nike Kyrie Flytrap IV', url: 'img/sneakers12.png', price: 139, inCart: false, favorite: false},
 ];
 
