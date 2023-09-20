@@ -6,11 +6,9 @@ import style from './Card.module.scss';
 function CardOrdered({id, name, price, url, }) {
 
   return (
-    <>
-    {
+
     <div className={style.card}>
       <img
-        //className="item__img"
         alt={name}
         src={url}
         width={133}
@@ -25,9 +23,7 @@ function CardOrdered({id, name, price, url, }) {
         </div>
       </div>
     </div>
-}
 
-    </>
   );
 }
 

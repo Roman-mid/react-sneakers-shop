@@ -10,10 +10,10 @@ function Order() {
 
   const { yourOrder, serchItems, goToShop } = React.useContext(AppContext);
 
-  const myOrder = yourOrder.map((obj, ind) => {
+  const myOrder = [...yourOrder].reverse().map((obj, ind) => {
     return (
       <div className={style.orderWrap} key={ind + '_' + toString(ind)} >
-      <h2>Order №{ind + 1}</h2>
+      <h2>Order №{yourOrder.length - (ind)}</h2>
       <div className="wrap-cards" style={{"marginTop": "10px"}}>
       {obj.items.filter(item => item.name.toLowerCase().includes(serchItems.toLowerCase())).map(item => {
        return  <CardOrdered
